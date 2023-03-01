@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Portfolio - Contact</title>
+    <title> Contact</title>
 
     <style>
+      :root{
+          --bg: #03001C;
+          --sec: #301E67;
+          --thd: #5B8FB9;
+          --txt: #B6EADA;
+      }
       body {
-        font-family: Arial, sans-serif;
+        color: var(--bg);
+        background: var(--thd);
+        font-family: Tahoma, sans-serif;
         margin: 0;
         padding: 0;
       }
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
       nav {
-        background-color: #eee;
+        background-color: var(--sec);
         padding: 10px;
         text-align: right;
       }
       nav a {
-        color: #333;
+        color: var(--txt);
         text-decoration: none;
         margin: 10px;
         font-weight: bold;
@@ -31,18 +33,19 @@
         text-align: center;
       }
       h1 {
-        font-size: 36px;
+        font-size: 45px;
         margin-top: 0;
       }
       .contacts{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 1%
       }
       h2 {
         text-align: left;
         font-size: 24px;
-        margin-top: 40px;
+        margin-top: 20px;
       }
       ul {
         list-style: none;
@@ -55,12 +58,13 @@
       }
       a {
         font-size: 24px;
-        color: #333;
+        color: var(--bg);
         text-decoration: none;
         display: inline-block;
         padding: 10px 20px;
-        border: 2px solid #333;
+        border: 2px solid var(--bg);
         border-radius: 5px;
+        transition: all ease 0.5s;
       }
       .linkbox{
         margin-right: 2.5%;
@@ -69,8 +73,12 @@
         border: none;
       }
       a:hover {
-        background-color: #333;
-        color: #fff;
+        background-color: var(--bg);
+        color: var(--txt);
+      }
+      .link:hover {
+        background-color: var(--thd);
+        color: var(--bg);
       }
       .email{
         margin-left: 10%;
@@ -82,10 +90,12 @@
       }
       #main-img{
         margin-left: 5%;
+        width: auto;
+        height: 50vmin;
       }
       footer {
-        background-color: #333;
-        color: #fff;
+        background-color: var(--sec);
+        color: var(--txt);
         padding: 10px;
         text-align: center;
         position: fixed;
@@ -98,9 +108,6 @@
 
   </head>
   <body>
-    <header>
-      <h1>My Portfolio</h1>
-    </header>
     <nav>
     <div class="linkbox">
       <a class="link" href="index.html">Home</a>
@@ -109,22 +116,22 @@
     </nav>
     <main>
 
-      <h1>Contact Me</h1>
+      <h1>CONTACT ME</h1>
         <div class="contacts">
             <div class="link-list">
                 <h2>Links:</h2>
                 <ul>
-                    <li><a href="https://example.com">Example Website</a></li>
-                    <li><a href="https://github.com/username">GitHub Profile</a></li>
-                    <li><a href="https://linkedin.com/in/username">LinkedIn Profile</a></li>
+                    <li><a href="">https://trebor-katalbas.github.io/portfolio-v1/</a></li>
+                    <li><a href="https://github.com/username">https://github.com/Trebor-Katalbas</a></li>
+                    <li><a href="https://linkedin.com/in/username">https://Facebook.com/Trebor-Katalbas</a></li>
                 </ul>
             </div>
 
             <div class="email">
                 <h2>Email:</h2>
-                <p class="email1">Email me at <a href="mailto:contact@example.com">contact@example.com</a></p>
+                <p class="email1">Email me at <a href="mailto:contact@example.com">carltrebors0110@yahoo.com</a></p>
             </div>
-            <img id="main-img" src="" alt="Your Picture">
+            <img id="main-img" src="img/TK pic(orig).png" alt="Your Picture">
         </div>
 
     </main>
